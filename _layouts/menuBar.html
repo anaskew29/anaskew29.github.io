@@ -51,11 +51,24 @@ li.dropdown {display: block;}
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 }
+    
+#menu-outer {
+	height: 84px;
+	background: url(images/bar-bg.jpg) repeat-x;
+}
+    
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+    
 </style>
 </head>
 <body>
 
-<ul>
+<div id="menu-outer">
+  <div class="table">
+    <ul>
   <li><a href="/">Home</a></li>
   <li><a href="/about">About</a></li>
   <li><a href="/cv">Curriculum Vitae</a></li>
@@ -68,6 +81,8 @@ li.dropdown {display: block;}
     </div>
   </li>
 </ul>
+    </div>
+    </div>
 
 {{ content }}
 
