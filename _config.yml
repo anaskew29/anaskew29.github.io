@@ -3,3 +3,4 @@ markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 include: ["images"]
 baseurl: /anaskew29
+[pdfOfCV]: anaskew29.github.io/download/Alyson Askew CV November 2016.pdf
