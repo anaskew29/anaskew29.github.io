@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+body {margin: 0;}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -8,25 +13,19 @@ ul {
     background-color: #333;
 }
 
-li {
-    float: left;
-}
+li {float: left;}
 
 li a, .dropbtn {
-    display: inline-block;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: navy;
-}
+li a:hover, .dropdown:hover .dropbtn {background-color: #8D9AB8;}
 
-li.dropdown {
-    display: inline-block;
-}
+li.dropdown {display: block;}
 
 .dropdown-content {
     display: none;
@@ -46,8 +45,11 @@ li.dropdown {
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown:hover .dropdown-content {display: block;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
 }
 </style>
 </head>
@@ -60,13 +62,14 @@ li.dropdown {
   <li class="dropdown">
     <a href="/projects" class="dropbtn">Projects</a>
     <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a href="#">proj 1</a>
+      <a href="#">proj 2</a>
+      <a href="#">proj 3</a>
     </div>
   </li>
 </ul>
 
-    {{ content }}
+{{ content }}
 
 </body>
+</html>
