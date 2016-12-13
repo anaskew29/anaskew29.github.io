@@ -2,3 +2,4 @@ name: Alyson Askew, Computer Engineer
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 include: ["images"]
+baseurl: /anaskew29
